@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="abr#text"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/tork-a/rtmros_hironx-release/archive/release/kinetic/rtmros_hironx/2.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+DESCRIPTION="The rtmros_hironx package is an operating interface via ROS and OpenRTM, fo[...]"
+HOMEPAGE="http://ros.org/wiki/rtmros_hironx/"
+SRC_URI="https://github.com/tork-a/${PN}-release/archive/release/kinetic/${PN}/2.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

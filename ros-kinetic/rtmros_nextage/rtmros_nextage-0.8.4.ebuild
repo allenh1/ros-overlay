@@ -6,8 +6,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="The rtmros_nextage package is a ROS interface for <a href=\"http://nextage.[...]"
+HOMEPAGE="http://ros.org/wiki/rtmros_nextage"
 SRC_URI="https://github.com/tork-a/${PN}-release/archive/release/kinetic/${PN}/0.8.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

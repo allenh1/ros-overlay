@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,8 +8,8 @@ inherit ros-cmake
 
 DESCRIPTION="Ult/psd/cliff to pointcloud:\
 	Publish Ult, cliff, and psd sensors event[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/SawYerRobotics-release/roch_robot-release/archive/release/kinetic/roch_sensorpc/2.0.15-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://wiki.ros.org/roch_sensorpc"
+SRC_URI="https://github.com/SawYerRobotics-release/roch_robot-release/archive/release/kinetic/${PN}/2.0.15-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

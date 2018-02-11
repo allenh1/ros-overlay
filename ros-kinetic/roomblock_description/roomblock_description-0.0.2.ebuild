@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="The roomblock_description package"
 HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/tork-a/roomblock-release/archive/release/kinetic/roomblock_description/0.0.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/tork-a/roomblock-release/archive/release/kinetic/${PN}/0.0.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/create_description
 	ros-kinetic/joint_state_publisher
@@ -20,6 +21,8 @@ RDEPEND="
 	ros-kinetic/rviz
 	ros-kinetic/urdf
 	ros-kinetic/xacro
+	test? ( ros-kinetic/roslaunch )
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
@@ -28,4 +31,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Trep: Mechanical Simulation and Optimal Control Software"
 HOMEPAGE="http://nxr.northwestern.edu/trep"
-SRC_URI="https://github.com/MurpheyLab/trep-release/archive/release/kinetic/python_trep/1.0.3-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/MurpheyLab/trep-release/archive/release/kinetic/${PN}/1.0.3-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="GPL-3"
 

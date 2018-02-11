@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Utilities for flashing and enabling Kobukis USB connection	This package c"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/yujinrobot-release/kobuki_core-release/archive/release/kinetic/kobuki_ftdi/0.7.8-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+DESCRIPTION="Utilities for flashing and enabling Kobuki\'s USB connection.\
+\		This p[...]"
+HOMEPAGE="http://ros.org/wiki/kobuki_ftdi"
+SRC_URI="https://github.com/yujinrobot-release/kobuki_core-release/archive/release/kinetic/${PN}/0.7.8-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -31,6 +32,6 @@ ROS_PREFIX="opt/ros/${ROS_DISTRO}"
 src_prepare() {
 	cd ${P}
 	EPATCH_SOURCE="${FILESDIR}" EPATCH_SUFFIX="patch" \
-				 EPATCH_FORCE="yes" epatch
+	EPATCH_FORCE="yes" epatch
 	ros-cmake_src_prepare
 }

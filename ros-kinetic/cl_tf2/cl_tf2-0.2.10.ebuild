@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Client implementation to use TF2 from Common Lisp"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-gbp/roslisp_common-release/archive/release/kinetic/cl_tf2/0.2.10-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="https://github.com/ros/roslisp_common/issues"
+SRC_URI="https://github.com/ros-gbp/roslisp_common-release/archive/release/kinetic/${PN}/0.2.10-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

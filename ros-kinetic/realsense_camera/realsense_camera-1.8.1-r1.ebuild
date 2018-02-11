@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="RealSense Camera package allowing access to Intel 3D cameras and advanced m[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://www.ros.org/wiki/RealSense"
 SRC_URI="https://github.com/intel-ros/realsense-release/archive/release/kinetic/${PN}/1.8.1-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

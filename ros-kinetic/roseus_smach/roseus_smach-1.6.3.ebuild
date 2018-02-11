@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -11,7 +11,7 @@ DESCRIPTION="roseus_smach\
 	 * Euslisp state machine class. it will be moved.\
 	[...]"
 HOMEPAGE="http://ros.org/wiki/roseus_smach"
-SRC_URI="https://github.com/tork-a/jsk_roseus-release/archive/release/kinetic/roseus_smach/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/tork-a/jsk_roseus-release/archive/release/kinetic/${PN}/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

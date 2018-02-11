@@ -7,15 +7,20 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Model files of OpenNI device."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://www.ros.org/wiki/openni_description"
 SRC_URI="https://github.com/ros-gbp/openni_camera-release/archive/release/kinetic/${PN}/1.11.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/urdf
 	ros-kinetic/xacro
+	test? ( ros-kinetic/kobuki_description )
+	test? ( ros-kinetic/rostest )
+	test? ( ros-kinetic/turtlebot_description )
+	test? ( dev-libs/urdfdom )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Deprecated\
-	\"cob_utilities\" subsumes a number of classes, which are u[...]"
+	&quot;cob_utilities&quot; subsumes a number of classes, whi[...]"
 HOMEPAGE="http://ros.org/wiki/cob_utilities"
 SRC_URI="https://github.com/ipa320/cob_driver-release/archive/release/kinetic/${PN}/0.6.11-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 

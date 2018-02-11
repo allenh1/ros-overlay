@@ -13,6 +13,7 @@ SRC_URI="https://github.com/tork-a/jsk_common-release/archive/release/kinetic/${
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/diagnostic_msgs
 	ros-kinetic/diagnostic_updater
@@ -34,6 +35,8 @@ RDEPEND="
 	ros-kinetic/std_srvs
 	ros-kinetic/tf
 	ros-kinetic/topic_tools
+	test? ( ros-kinetic/roscpp_tutorials )
+	test? ( ros-kinetic/roslint )
 	dev-python/numpy
 	media-libs/opencv[python]
 	sci-libs/scipy

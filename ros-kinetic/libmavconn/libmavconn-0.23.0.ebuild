@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="MAVLink communication library.\
 	This library provide unified connection[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/mavros"
 SRC_URI="https://github.com/mavlink/mavros-release/archive/release/kinetic/${PN}/0.23.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="( GPL-3 LGPL-3 BSD )"

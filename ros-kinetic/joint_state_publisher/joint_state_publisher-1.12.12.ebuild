@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,15 +8,17 @@ inherit ros-cmake
 
 DESCRIPTION="This package contains a tool for setting and publishing joint state values [...]"
 HOMEPAGE="http://www.ros.org/wiki/joint_state_publisher"
-SRC_URI="https://github.com/ros-gbp/joint_state_publisher-release/archive/release/kinetic/joint_state_publisher/1.12.12-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/1.12.12-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/python_qt_binding
 	ros-kinetic/rospy
 	ros-kinetic/sensor_msgs
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

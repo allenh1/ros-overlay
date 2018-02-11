@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="The care-o-bot-simulation meta-package"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="https://github.com/ipa320/care-o-bot"
 SRC_URI="https://github.com/ipa320/care-o-bot-release/archive/release/kinetic/${PN}/0.6.6-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="Apache-2.0"

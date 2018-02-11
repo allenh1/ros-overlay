@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="The agvs_pad packageComponent to control the robot by using a ps3 pad"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/RobotnikAutomation/agvs_common-release/archive/release/kinetic/agvs_pad/0.1.3-1.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="The agvs_pad package.Component to control the robot by using a ps3 pad."
+HOMEPAGE="http://wiki.ros.org/agvs_pad"
+SRC_URI="https://github.com/RobotnikAutomation/agvs_common-release/archive/release/kinetic/${PN}/0.1.3-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -30,4 +30,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

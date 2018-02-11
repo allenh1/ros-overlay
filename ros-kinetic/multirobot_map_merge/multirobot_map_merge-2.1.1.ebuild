@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -14,6 +14,7 @@ SRC_URI="https://github.com/hrnr/m-explore-release/archive/release/kinetic/${PN}
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/geometry_msgs
 	ros-kinetic/map_msgs
@@ -21,6 +22,8 @@ RDEPEND="
 	ros-kinetic/opencv3
 	ros-kinetic/roscpp
 	ros-kinetic/tf2_geometry_msgs
+	test? ( ros-kinetic/roslaunch )
+	test? ( ros-kinetic/rosunit )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

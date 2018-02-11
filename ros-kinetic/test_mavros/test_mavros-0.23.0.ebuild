@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Tests for MAVROS package"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="https://github.com/mavlink/mavros.git"
 SRC_URI="https://github.com/mavlink/mavros-release/archive/release/kinetic/${PN}/0.23.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="( BSD GPL-3 LGPL-3 )"

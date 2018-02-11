@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ros-gbp/image_pipeline-release/archive/release/kinet
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cv_bridge
 	ros-kinetic/dynamic_reconfigure
@@ -22,6 +23,8 @@ RDEPEND="
 	ros-kinetic/nodelet_topic_tools
 	ros-kinetic/roscpp
 	ros-kinetic/sensor_msgs
+	test? ( ros-kinetic/camera_calibration_parsers )
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

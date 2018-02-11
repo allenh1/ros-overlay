@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/${P
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/rosbuild
 	ros-kinetic/rosgraph
@@ -20,6 +21,7 @@ RDEPEND="
 	ros-kinetic/roslib
 	ros-kinetic/rosnode
 	ros-kinetic/rosservice
+	test? ( ros-kinetic/cmake_modules )
 	dev-python/paramiko
 	dev-python/rospkg
 "

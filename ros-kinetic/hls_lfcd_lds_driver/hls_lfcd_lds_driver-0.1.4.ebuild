@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,8 +8,8 @@ inherit ros-cmake
 
 DESCRIPTION="ROS package for LDS\(HLS-LFCD2\).\
 	The LDS \(Laser Distance Sensor\) is[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ROBOTIS-GIT-release/hls-lfcd-lds-driver-release/archive/release/kinetic/hls_lfcd_lds_driver/0.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://wiki.ros.org/hls_lfcd_lds_driver"
+SRC_URI="https://github.com/ROBOTIS-GIT-release/hls-lfcd-lds-driver-release/archive/release/kinetic/${PN}/0.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

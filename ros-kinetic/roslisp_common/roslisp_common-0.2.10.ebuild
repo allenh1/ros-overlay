@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,8 +8,8 @@ inherit ros-cmake
 
 DESCRIPTION="Common libraries to control ROS based robots. This stack contains\
 	an i[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-gbp/roslisp_common-release/archive/release/kinetic/roslisp_common/0.2.10-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://ros.org/wiki/roslisp_common"
+SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/0.2.10-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

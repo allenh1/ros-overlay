@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <longdescription>
+    Provides a unified 
+    <a href="http://eigen.tuxfamily.org">Eigen-</a>
+    based interface to use Nonlinear Programming solvers such as 
+    <a href="https://projects.coin-or.org/Ipopt">Ipopt</a> and
+    <a href="http://ampl.com/products/solvers/solvers-we-sell/snopt/">Snopt</a>.
+    The user defines the solver independent optimization problem by set of C++ 
+    classes resembling variables, cost and constraints. Subsequently, the 
+    problem can be efficently solved with either solver.
+  </longdescription>
   <maintainer type="person">
     <email>hunter@openrobotics.org</email>
     <name>Hunter L. Allen</name>

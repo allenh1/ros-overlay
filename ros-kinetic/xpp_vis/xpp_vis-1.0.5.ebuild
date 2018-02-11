@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Visualization for the XPP Motion Framework."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://github.com/leggedrobotics/xpp"
 SRC_URI="https://github.com/leggedrobotics/xpp-release/archive/release/kinetic/${PN}/1.0.5-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

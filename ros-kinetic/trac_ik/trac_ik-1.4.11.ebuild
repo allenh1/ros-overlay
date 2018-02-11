@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="The ROS packages in this repository were created to provide an improved\
   [...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/trac_ik"
 SRC_URI="https://github.com/traclabs/${PN}-release/archive/release/kinetic/${PN}/1.4.11-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="The Robot Pose EKF package is used to estimate the 3D pose of a robot, base[...]"
 HOMEPAGE="http://wiki.ros.org/robot_pose_ekf"
-SRC_URI="https://github.com/ros-gbp/navigation-release/archive/release/kinetic/robot_pose_ekf/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-gbp/navigation-release/archive/release/kinetic/${PN}/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/bfl
 	ros-kinetic/geometry_msgs
@@ -22,6 +23,8 @@ RDEPEND="
 	ros-kinetic/sensor_msgs
 	ros-kinetic/std_msgs
 	ros-kinetic/tf
+	test? ( ros-kinetic/rosbag )
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
@@ -31,4 +34,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

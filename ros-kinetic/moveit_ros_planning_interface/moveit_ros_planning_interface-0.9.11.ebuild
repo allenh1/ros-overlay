@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,12 +7,13 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Components of MoveIt that offer simpler interfaces to planning and execution"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://moveit.ros.org"
 SRC_URI="https://github.com/ros-gbp/moveit-release/archive/release/kinetic/${PN}/0.9.11-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/actionlib
 	ros-kinetic/eigen_conversions
@@ -25,6 +26,8 @@ RDEPEND="
 	ros-kinetic/rospy
 	ros-kinetic/tf
 	ros-kinetic/tf_conversions
+	test? ( ros-kinetic/moveit_resources )
+	test? ( ros-kinetic/rostest )
 	dev-lang/python
 "
 DEPEND="${RDEPEND}

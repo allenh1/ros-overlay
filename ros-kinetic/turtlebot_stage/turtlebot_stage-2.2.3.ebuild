@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Stage version of turtlebot simulation. Convenient to test 2D-navigation rel[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/turtlebot-release/turtlebot_simulator-release/archive/release/kinetic/turtlebot_stage/2.2.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://wiki.ros.org/turtlebot_stage"
+SRC_URI="https://github.com/turtlebot-release/turtlebot_simulator-release/archive/release/kinetic/${PN}/2.2.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

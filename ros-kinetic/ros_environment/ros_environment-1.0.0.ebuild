@@ -6,8 +6,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="The package provides the environment variables ROS_VERSION, ROS_DISTRO, ROS[...]"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="The package provides the environment variables \`ROS_VERSION\`, \`ROS_DISTR[...]"
+HOMEPAGE="https://github.com/ros/ros_environment"
 SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/1.0.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -14,9 +14,11 @@ SRC_URI="https://github.com/ipa320/schunk_modular_robotics-release/archive/relea
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/gazebo_ros
 	ros-kinetic/xacro
+	test? ( dev-cpp/gtest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

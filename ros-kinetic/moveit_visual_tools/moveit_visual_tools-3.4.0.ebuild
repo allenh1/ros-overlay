@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Helper functions for displaying and debugging MoveIt! data in Rviz via publ[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="https://github.com/davetcoleman/moveit_visual_tools"
 SRC_URI="https://github.com/davetcoleman/${PN}-release/archive/release/kinetic/${PN}/3.4.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

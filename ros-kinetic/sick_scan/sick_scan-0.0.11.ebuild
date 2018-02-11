@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="A ROS driver for the SICK TiM series of laser scanners.\
 	This package i[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/sick_tim"
 SRC_URI="https://github.com/SICKAG/${PN}-release/archive/release/kinetic/${PN}/0.0.11-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -9,7 +9,7 @@ inherit ros-cmake
 DESCRIPTION="A 2D navigation stack that takes in information from odometry, sensor\
 	[...]"
 HOMEPAGE="http://wiki.ros.org/navigation"
-SRC_URI="https://github.com/ros-gbp/navigation-release/archive/release/kinetic/navigation/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="( BSD LGPL-2 LGPL-2 )"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
@@ -39,4 +39,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

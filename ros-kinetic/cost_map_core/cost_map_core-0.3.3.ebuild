@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Cost maps, following the style of ethz-asl\'s grid_map library."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="https://github.com/stonier/cost_map"
 SRC_URI="https://github.com/stonier/cost_map-release/archive/release/kinetic/${PN}/0.3.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

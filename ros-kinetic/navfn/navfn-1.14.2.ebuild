@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,13 +6,14 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
+DESCRIPTION="navfn provides a fast interpolated navigation function that can be used to [...]"
 HOMEPAGE="http://wiki.ros.org/navfn"
-SRC_URI="https://github.com/ros-gbp/navigation-release/archive/release/kinetic/navfn/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-gbp/navigation-release/archive/release/kinetic/${PN}/1.14.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/costmap_2d
 	ros-kinetic/geometry_msgs
@@ -26,6 +27,7 @@ RDEPEND="
 	ros-kinetic/roscpp
 	ros-kinetic/tf
 	ros-kinetic/visualization_msgs
+	test? ( ros-kinetic/rosunit )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
@@ -37,4 +39,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

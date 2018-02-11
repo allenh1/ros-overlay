@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="The dynamicEDT3D library implements an inrementally updatable Euclidean distance"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-gbp/octomap-release/archive/release/kinetic/dynamic_edt_3d/1.8.1-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="The dynamicEDT3D library implements an inrementally updatable Euclidean dis[...]"
+HOMEPAGE="http://octomap.github.io"
+SRC_URI="https://github.com/ros-gbp/octomap-release/archive/release/kinetic/${PN}/1.8.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -24,4 +24,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <longdescription>
+    This package provides the third-party KNI (Katana Native Interface) library for Katana
+     robot arms.
+
+     Instead of using the KNI library directly, the <a href="/wiki/katana">katana</a>
+     package should be used for communication with the Katana arm.
+  </longdescription>
   <maintainer type="person">
     <email>hunter@openrobotics.org</email>
     <name>Hunter L. Allen</name>

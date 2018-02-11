@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="The URDF file for a quadrotor to be used with the xpp packages and a \
 	[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://github.com/leggedrobotics/xpp"
 SRC_URI="https://github.com/leggedrobotics/xpp-release/archive/release/kinetic/${PN}/1.0.5-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

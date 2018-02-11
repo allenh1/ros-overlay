@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -13,6 +13,7 @@ SRC_URI="https://github.com/UbiquityRobotics-release/${PN}-release/archive/relea
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/controller_manager
 	ros-kinetic/diff_drive_controller
@@ -23,6 +24,7 @@ RDEPEND="
 	ros-kinetic/nav_msgs
 	ros-kinetic/serial
 	ros-kinetic/tf
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
+DESCRIPTION="The cob_navigation stack provides different navigation packages for <a href[...]"
 HOMEPAGE="http://ros.org/wiki/cob_navigation"
 SRC_URI="https://github.com/ipa320/${PN}-release/archive/release/kinetic/${PN}/0.6.6-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 

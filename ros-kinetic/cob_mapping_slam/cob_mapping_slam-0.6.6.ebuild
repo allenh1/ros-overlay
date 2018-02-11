@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
+DESCRIPTION="cob_mapping_slam holds launch files for running SLAM using the <a href=\"ht[...]"
 HOMEPAGE="http://ros.org/wiki/cob_mapping_slam"
 SRC_URI="https://github.com/ipa320/cob_navigation-release/archive/release/kinetic/${PN}/0.6.6-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 

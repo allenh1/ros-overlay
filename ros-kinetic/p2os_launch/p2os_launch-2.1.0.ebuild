@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Launch and config files designed for use with the p2os stack."
 HOMEPAGE="http://ros.org/wiki/p2os-purdue"
-SRC_URI="https://github.com/allenh1/p2os-release/archive/release/kinetic/p2os_launch/2.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/allenh1/p2os-release/archive/release/kinetic/${PN}/2.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
+DESCRIPTION="The smach viewer is a GUI that shows the state of hierarchical\
+	SMACH s[...]"
 HOMEPAGE="http://ros.org/wiki/smach_viewer"
-SRC_URI="https://github.com/jbohren/executive_smach_visualization-release/archive/release/kinetic/smach_viewer/2.0.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/jbohren/executive_smach_visualization-release/archive/release/kinetic/${PN}/2.0.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

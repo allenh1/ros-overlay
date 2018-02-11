@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="qt_gui_app provides the main to start an instance of the integrated graphic[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/qt_gui_app"
 SRC_URI="https://github.com/ros-gbp/qt_gui_core-release/archive/release/kinetic/${PN}/0.3.8-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

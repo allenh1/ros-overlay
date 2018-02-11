@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Messages for camera view controllers"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-gbp/view_controller_msgs-release/archive/release/kinetic/view_controller_msgs/0.1.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="Messages for \(camera\) view controllers"
+HOMEPAGE="http://ros.org/wiki/view_controller_msgs"
+SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/0.1.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -27,4 +27,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

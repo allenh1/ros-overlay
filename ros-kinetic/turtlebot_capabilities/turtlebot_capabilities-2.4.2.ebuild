@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Capabilities for the TurtleBot"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/turtlebot-release/turtlebot-release/archive/release/kinetic/turtlebot_capabilities/2.4.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+HOMEPAGE="http://ros.org/wiki/turtlebot_capabilities"
+SRC_URI="https://github.com/turtlebot-release/turtlebot-release/archive/release/kinetic/${PN}/2.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -24,4 +24,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

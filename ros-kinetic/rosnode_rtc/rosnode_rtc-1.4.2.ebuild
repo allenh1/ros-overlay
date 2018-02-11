@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -9,7 +9,7 @@ inherit ros-cmake
 DESCRIPTION="This package gives transparency between RTM and ROS.\
 \
 	 rtmros-data-br[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/rosnode_rtc"
 SRC_URI="https://github.com/tork-a/rtmros_common-release/archive/release/kinetic/${PN}/1.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ipa320/cob_simulation-release/archive/release/kineti
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cob_bringup
 	ros-kinetic/cob_default_robot_config
@@ -27,6 +28,7 @@ RDEPEND="
 	ros-kinetic/rospy
 	ros-kinetic/rostest
 	ros-kinetic/trajectory_msgs
+	test? ( ros-kinetic/cob_supported_robots )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

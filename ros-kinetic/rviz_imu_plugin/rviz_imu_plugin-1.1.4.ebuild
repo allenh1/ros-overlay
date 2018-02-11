@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="RVIZ plugin for IMU visualization"
 HOMEPAGE="http://ros.org/wiki/rviz_imu_plugin"
-SRC_URI="https://github.com/uos-gbp/imu_tools-release/archive/release/kinetic/rviz_imu_plugin/1.1.4-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/uos-gbp/imu_tools-release/archive/release/kinetic/${PN}/1.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -28,4 +28,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Simple P-Controller for a holonomic robot base"
 HOMEPAGE="https://www.github.com/code-iai/nav_pcontroller"
-SRC_URI="https://github.com/code-iai-release/nav_pcontroller-release/archive/release/kinetic/nav_pcontroller/0.1.4-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/code-iai-release/${PN}-release/archive/release/kinetic/${PN}/0.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -31,4 +31,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

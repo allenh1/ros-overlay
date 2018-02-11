@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="A package which adds useful additions to the serial package."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://github.com/wjwwood/serial_utils"
 SRC_URI="https://github.com/wjwwood/${PN}-release/archive/release/kinetic/${PN}/0.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

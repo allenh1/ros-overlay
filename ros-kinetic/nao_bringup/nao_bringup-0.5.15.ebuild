@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Launch files and scripts needed to bring ROS interfaces for Nao up into a	  "
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-naoqi/nao_robot-release/archive/release/kinetic/nao_bringup/0.5.15-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="Launch files and scripts needed to bring ROS interfaces for Nao up into a\
+[...]"
+HOMEPAGE="http://www.ros.org/wiki/nao_robot"
+SRC_URI="https://github.com/ros-naoqi/nao_robot-release/archive/release/kinetic/${PN}/0.5.15-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -29,4 +30,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

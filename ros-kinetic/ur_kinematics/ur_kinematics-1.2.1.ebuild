@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Provides forward and inverse kinematics for Universal Robots designs.\
 	[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/ur_kinematics"
 SRC_URI="https://github.com/ros-industrial-release/universal_robot-release/archive/release/kinetic/${PN}/1.2.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

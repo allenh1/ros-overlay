@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <longdescription>
+    The hector_worldmodel stack helps to collect and fuse information about objects in the world.
+    It is used by Team Hector Darmstadt to localize victims and QR codes in the Robocup Rescue
+    scenario. See <a href="http://wiki.ros.org/hector_object_tracker">hector_object_tracker</a> for further details.
+  </longdescription>
   <maintainer type="person">
     <email>hunter@openrobotics.org</email>
     <name>Hunter L. Allen</name>

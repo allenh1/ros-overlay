@@ -13,8 +13,10 @@ SRC_URI="https://github.com/tork-a/jsk_control-release/archive/release/kinetic/$
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/euslisp
+	test? ( ros-kinetic/eus_qpoases )
 	dev-cpp/eigen
 "
 DEPEND="${RDEPEND}

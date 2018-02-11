@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="A hub acts as a shared keyvalue store for multiple ros	 systems primarily "
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/yujinrobot-release/rocon_multimaster-release/archive/release/kinetic/rocon_hub/0.8.1-2.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="A hub acts as a shared key-value store for multiple ros \
+	systems \(pri[...]"
+HOMEPAGE="http://ros.org/wiki/rocon_hub"
+SRC_URI="https://github.com/yujinrobot-release/rocon_multimaster-release/archive/release/kinetic/${PN}/0.8.1-2.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -32,4 +33,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

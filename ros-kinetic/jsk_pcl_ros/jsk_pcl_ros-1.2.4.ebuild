@@ -7,12 +7,13 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="ROS nodelets for pointcloud perception."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://jsk-docs.readthedocs.io/en/latest/jsk_recognition/doc/jsk_pcl_ros"
 SRC_URI="https://github.com/tork-a/jsk_recognition-release/archive/release/kinetic/${PN}/1.2.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cv_bridge
 	ros-kinetic/diagnostic_msgs
@@ -58,6 +59,9 @@ RDEPEND="
 	ros-kinetic/tf_conversions
 	ros-kinetic/topic_tools
 	ros-kinetic/visualization_msgs
+	test? ( ros-kinetic/jsk_tools )
+	test? ( ros-kinetic/roslaunch )
+	test? ( ros-kinetic/rostest )
 	dev-libs/boost
 	sci-libs/scikits_learn
 	dev-cpp/yaml-cpp

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="roseus_tutorials"
 HOMEPAGE="http://ros.org/wiki/roseus_tutorials"
-SRC_URI="https://github.com/tork-a/jsk_roseus-release/archive/release/kinetic/roseus_tutorials/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/tork-a/jsk_roseus-release/archive/release/kinetic/${PN}/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/ar_track_alvar
 	ros-kinetic/checkerboard_detector
@@ -23,6 +24,7 @@ RDEPEND="
 	ros-kinetic/posedetection_msgs
 	ros-kinetic/pr2eus
 	ros-kinetic/visualization_msgs
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

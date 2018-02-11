@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="The turtlebot meta package provides all the basic drivers for running and u[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/turtlebot"
 SRC_URI="https://github.com/${PN}-release/${PN}-release/archive/release/kinetic/${PN}/2.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

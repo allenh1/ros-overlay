@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -13,9 +13,11 @@ SRC_URI="https://github.com/tork-a/jsk_3rdparty-release/archive/release/kinetic/
 LICENSE="MIT"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/message_runtime
 	ros-kinetic/rospy
+	test? ( ros-kinetic/rostest )
 	sci-libs/scipy
 "
 DEPEND="${RDEPEND}

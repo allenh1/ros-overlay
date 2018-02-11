@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="turtlebot_bringup provides roslaunch scripts for starting the TurtleBot base fun"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/turtlebot-release/turtlebot-release/archive/release/kinetic/turtlebot_bringup/2.4.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="turtlebot_bringup provides roslaunch scripts for starting the TurtleBot bas[...]"
+HOMEPAGE="http://ros.org/wiki/turtlebot_bringup"
+SRC_URI="https://github.com/turtlebot-release/turtlebot-release/archive/release/kinetic/${PN}/2.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -42,4 +42,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

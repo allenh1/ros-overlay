@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="myahrs_driver is a driver package for the WITHROBOT\'s myAHRS+. The myAHRS+[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/robotpilot/myahrs_driver-release/archive/release/kinetic/myahrs_driver/0.1.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://wiki.ros.org/myahrs_driver"
+SRC_URI="https://github.com/robotpilot/${PN}-release/archive/release/kinetic/${PN}/0.1.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

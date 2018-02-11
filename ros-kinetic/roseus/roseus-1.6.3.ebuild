@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="EusLisp client for ROs Robot Operating System."
 HOMEPAGE="http://pr.willowgarage.com/wiki/roseus"
-SRC_URI="https://github.com/tork-a/jsk_roseus-release/archive/release/kinetic/roseus/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/tork-a/jsk_${PN}-release/archive/release/kinetic/${PN}/1.6.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/actionlib
 	ros-kinetic/actionlib_msgs
@@ -36,6 +37,7 @@ RDEPEND="
 	ros-kinetic/tf
 	ros-kinetic/tf2_ros
 	ros-kinetic/visualization_msgs
+	test? ( x11-misc/xvfb-run )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/angles

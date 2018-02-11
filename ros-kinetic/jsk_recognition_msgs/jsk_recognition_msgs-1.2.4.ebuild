@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="ROS messages for jsk_pcl_ros and jsk_perception."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/jsk_recognition_msgs"
 SRC_URI="https://github.com/tork-a/jsk_recognition-release/archive/release/kinetic/${PN}/1.2.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

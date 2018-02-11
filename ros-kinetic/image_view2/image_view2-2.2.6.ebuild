@@ -13,6 +13,7 @@ SRC_URI="https://github.com/tork-a/jsk_common-release/archive/release/kinetic/${
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cv_bridge
 	ros-kinetic/geometry_msgs
@@ -27,6 +28,8 @@ RDEPEND="
 	ros-kinetic/std_msgs
 	ros-kinetic/std_srvs
 	ros-kinetic/tf
+	test? ( dev-python/numpy )
+	test? ( sci-libs/scipy )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

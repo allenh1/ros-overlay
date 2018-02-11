@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -9,14 +9,16 @@ inherit ros-cmake
 DESCRIPTION="This package contains a recent version of the Kinematics and Dynamics\
 	[...]"
 HOMEPAGE="http://wiki.ros.org/orocos_kdl"
-SRC_URI="https://github.com/smits/orocos-kdl-release/archive/release/kinetic/orocos_kdl/1.3.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/smits/orocos-kdl-release/archive/release/kinetic/${PN}/1.3.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="LGPL-2"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/catkin
 	dev-cpp/eigen
+	test? ( dev-util/cppunit )
 "
 DEPEND="${RDEPEND}
 	dev-util/cmake

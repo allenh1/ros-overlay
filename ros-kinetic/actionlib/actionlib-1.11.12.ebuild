@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="The actionlib stack provides a standardized interface for\
 	interfacing [...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://www.ros.org/wiki/actionlib"
 SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/1.11.12-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

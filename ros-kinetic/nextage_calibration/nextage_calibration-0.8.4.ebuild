@@ -8,12 +8,13 @@ inherit ros-cmake
 
 DESCRIPTION="This package provides .launch files and other tools for\
   calibrating the [...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/nextage_calibration"
 SRC_URI="https://github.com/tork-a/rtmros_nextage-release/archive/release/kinetic/${PN}/0.8.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/checkerboard_detector
 	ros-kinetic/dynamic_tf_publisher
@@ -26,6 +27,7 @@ RDEPEND="
 	ros-kinetic/tf
 	ros-kinetic/turtlebot_description
 	ros-kinetic/urdf
+	test? ( ros-kinetic/nextage_gazebo )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

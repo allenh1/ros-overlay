@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Message and service data structures for interacting with Gazebo from ROS."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://gazebosim.org/tutorials?cat=connect_ros"
 SRC_URI="https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/kinetic/${PN}/2.5.14-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

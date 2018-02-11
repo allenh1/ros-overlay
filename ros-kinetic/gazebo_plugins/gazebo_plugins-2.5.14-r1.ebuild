@@ -7,11 +7,13 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Robot-independent Gazebo plugins for sensors, motors and dynamic reconfigur[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://gazebosim.org/tutorials?cat=connect_ros"
 SRC_URI="https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/kinetic/${PN}/2.5.14-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
-LICENSE="( BSD Apache-2.0 )"
+LICENSE="BSD-2"
+
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/angles
 	ros-kinetic/camera_info_manager
@@ -37,6 +39,7 @@ RDEPEND="
 	ros-kinetic/tf2_ros
 	ros-kinetic/trajectory_msgs
 	ros-kinetic/urdf
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="This package contains a specialization of the gazebo_ros_control plugin.\
  [...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/cob_gazebo_ros_control"
 SRC_URI="https://github.com/ipa320/cob_gazebo_plugins-release/archive/release/kinetic/${PN}/0.7.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="Apache-2.0"

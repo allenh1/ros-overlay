@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Definition of cost map messages \(related to the grid map message type\)."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://github.com/stonier/cost_map"
 SRC_URI="https://github.com/stonier/cost_map-release/archive/release/kinetic/${PN}/0.3.3-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

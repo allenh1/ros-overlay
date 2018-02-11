@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="A partly automatically generated package with all the configuration and lau[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/panda_moveit_config"
 SRC_URI="https://github.com/frankaemika/franka_ros-release/archive/release/kinetic/${PN}/0.2.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="Apache-2.0"

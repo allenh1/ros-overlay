@@ -7,10 +7,11 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="API and ROS drivers for Phidgets devices"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/phidgets_drivers"
 SRC_URI="https://github.com/ros-drivers-gbp/${PN}-release/archive/release/kinetic/${PN}/0.7.5-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
-LICENSE="( BSD LGPL-2 )"
+LICENSE="BSD"
+
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 RDEPEND="
 	ros-kinetic/libphidget21

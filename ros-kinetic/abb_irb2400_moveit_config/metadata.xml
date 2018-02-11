@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <longdescription>
+    <p>
+      MoveIt package for the ABB IRB 2400.
+    </p>
+    <p>
+      An automatically generated package with all the configuration and launch
+      files for using the ABB IRB 2400 with the MoveIt Motion Planning
+      Framework.
+    </p>
+  </longdescription>
   <maintainer type="person">
     <email>hunter@openrobotics.org</email>
     <name>Hunter L. Allen</name>

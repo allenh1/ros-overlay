@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,8 +8,8 @@ inherit ros-cmake
 
 DESCRIPTION="Python ROS drivers for accessing an Axis camera\'s MJPG\
 	stream. Also p[...]"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-drivers-gbp/axis_camera-release/archive/release/kinetic/axis_camera/0.2.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://ros.org/wiki/axis_camera"
+SRC_URI="https://github.com/ros-drivers-gbp/${PN}-release/archive/release/kinetic/${PN}/0.2.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

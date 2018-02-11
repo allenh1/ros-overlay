@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="For every image, computes its sift features and send a new message with the[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://jsk-docs.readthedocs.io/en/latest/jsk_recognition/doc/imagesift"
 SRC_URI="https://github.com/tork-a/jsk_recognition-release/archive/release/kinetic/${PN}/1.2.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="LGPL-2"

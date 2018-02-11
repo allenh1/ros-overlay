@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,13 +6,14 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="rqt_py_trees provides a GUI plugin for visualizing py_trees behaviour trees base"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/stonier/rqt_py_trees-release/archive/release/kinetic/rqt_py_trees/0.3.1-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="rqt_py_trees provides a GUI plugin for visualizing py_trees behaviour trees[...]"
+HOMEPAGE="http://ros.org/wiki/rqt_py_trees"
+SRC_URI="https://github.com/stonier/${PN}-release/archive/release/kinetic/${PN}/0.3.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/geometry_msgs
 	ros-kinetic/py_trees
@@ -27,6 +28,7 @@ RDEPEND="
 	dev-python/pygraphviz
 	dev-python/rospkg
 	dev-python/termcolor
+	test? ( dev-python/mock )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
@@ -35,4 +37,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

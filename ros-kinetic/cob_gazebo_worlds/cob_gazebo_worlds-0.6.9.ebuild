@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ipa320/cob_simulation-release/archive/release/kineti
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cob_default_env_config
 	ros-kinetic/controller_manager
@@ -29,6 +30,8 @@ RDEPEND="
 	ros-kinetic/tf
 	ros-kinetic/velocity_controllers
 	ros-kinetic/xacro
+	test? ( ros-kinetic/cob_default_env_config )
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

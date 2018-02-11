@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Robot descriptions in form of URDF files and meshes"
 HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/youbot-release/youbot_description-release/archive/release/kinetic/youbot_description/0.8.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/youbot-release/${PN}-release/archive/release/kinetic/${PN}/0.8.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="GPL-3"
 

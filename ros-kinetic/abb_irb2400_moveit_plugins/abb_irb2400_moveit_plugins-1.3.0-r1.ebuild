@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,12 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="p"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-industrial-release/abb-release/archive/release/kinetic/abb_irb2400_moveit_plugins/1.3.0-1.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="<p>\
+	  MoveIt plugins for the ABB 2400 \(and variants\).\
+	</p>\
+   [...]"
+HOMEPAGE="http://ros.org/wiki/abb_irb2400_moveit_plugins"
+SRC_URI="https://github.com/ros-industrial-release/abb-release/archive/release/kinetic/${PN}/1.3.0-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -27,4 +30,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

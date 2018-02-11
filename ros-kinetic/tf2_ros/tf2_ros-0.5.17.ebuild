@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/${
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/actionlib
 	ros-kinetic/actionlib_msgs
@@ -26,6 +27,7 @@ RDEPEND="
 	ros-kinetic/tf2_msgs
 	ros-kinetic/tf2_py
 	ros-kinetic/xmlrpcpp
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

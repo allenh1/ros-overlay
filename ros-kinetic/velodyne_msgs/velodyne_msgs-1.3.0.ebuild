@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="ROS message definitions for Velodyne 3D LIDARs."
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-drivers-gbp/velodyne-release/archive/release/kinetic/velodyne_msgs/1.3.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+HOMEPAGE="http://ros.org/wiki/velodyne_msgs"
+SRC_URI="https://github.com/ros-drivers-gbp/velodyne-release/archive/release/kinetic/${PN}/1.3.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

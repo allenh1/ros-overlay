@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -13,7 +13,9 @@ SRC_URI="https://github.com/locusrobotics/${PN}-release/archive/release/kinetic/
 LICENSE="GPL-1"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
+	test? ( ros-kinetic/roslint )
 	virtual/python-enum34
 	dev-python/virtualenv
 	=dev-lang/python-3*

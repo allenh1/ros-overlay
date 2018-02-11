@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,8 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="A package suite that provides all the capabilities for\
+	the ROS users t[...]"
+HOMEPAGE="http://wiki.ros.org/rtmros_common"
 SRC_URI="https://github.com/tork-a/${PN}-release/archive/release/kinetic/${PN}/1.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

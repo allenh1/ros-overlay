@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="This package contains a C++ parser for the Unified Robot Description\
 	F[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/urdf"
 SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/1.12.12-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

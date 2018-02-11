@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="A libfreenectbased ROS driver for the Microsoft Kinect  This is	a port of "
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-drivers-gbp/freenect_stack-release/archive/release/kinetic/freenect_camera/0.4.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="A libfreenect-based ROS driver for the Microsoft Kinect.  This is\
+	a po[...]"
+HOMEPAGE="http://ros.org/wiki/freenect_camera"
+SRC_URI="https://github.com/ros-drivers-gbp/freenect_stack-release/archive/release/kinetic/${PN}/0.4.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -32,4 +33,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

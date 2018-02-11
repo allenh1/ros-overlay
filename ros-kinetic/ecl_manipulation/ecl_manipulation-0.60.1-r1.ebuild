@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Includes basic manipulation related structures as well as a few	 algorithms "
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/yujinrobot-release/ecl_manipulation-release/archive/release/kinetic/ecl_manipulation/0.60.1-1.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="Includes basic manipulation related structures as well as a few \
+	algor[...]"
+HOMEPAGE="http://www.ros.org/wiki/ecl_manipulation"
+SRC_URI="https://github.com/yujinrobot-release/${PN}-release/archive/release/kinetic/${PN}/0.60.1-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -23,4 +24,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

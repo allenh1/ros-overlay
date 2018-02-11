@@ -6,8 +6,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="Provides ROS plugins that offer message and service publishers for interfac[...]"
+HOMEPAGE="http://gazebosim.org/tutorials?cat=connect_ros"
 SRC_URI="https://github.com/ros-gbp/${PN}_pkgs-release/archive/release/kinetic/${PN}/2.5.14-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="Apache-2.0"

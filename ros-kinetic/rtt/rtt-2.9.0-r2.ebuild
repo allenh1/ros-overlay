@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Orocos/RTT component framework"
 HOMEPAGE="http://www.orocos.org/rtt"
-SRC_URI="https://github.com/orocos-gbp/rtt-release/archive/release/kinetic/rtt/2.9.0-2.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/orocos-gbp/${PN}-release/archive/release/kinetic/${PN}/2.9.0-2.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 

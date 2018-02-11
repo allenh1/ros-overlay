@@ -6,8 +6,8 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="brul#text"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="Uses opencv to find checkboards and compute their 6D poses with respect to [...]"
+HOMEPAGE="http://jsk-docs.readthedocs.io/en/latest/jsk_recognition/doc/checkerboard_detector"
 SRC_URI="https://github.com/tork-a/jsk_recognition-release/archive/release/kinetic/${PN}/1.2.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

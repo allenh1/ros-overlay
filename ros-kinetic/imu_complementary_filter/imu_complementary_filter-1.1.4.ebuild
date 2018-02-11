@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Filter which fuses angular velocities, accelerations, and optionally magnetic "
+DESCRIPTION="Filter which fuses angular velocities, accelerations, and \(optionally\) ma[...]"
 HOMEPAGE="http://www.mdpi.com/1424-8220/15/8/19302"
-SRC_URI="https://github.com/uos-gbp/imu_tools-release/archive/release/kinetic/imu_complementary_filter/1.1.4-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/uos-gbp/imu_tools-release/archive/release/kinetic/${PN}/1.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -28,4 +28,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

@@ -13,6 +13,7 @@ SRC_URI="https://github.com/ipa320/cob_robots-release/archive/release/kinetic/${
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/canopen_chain_node
 	ros-kinetic/canopen_motor_node
@@ -87,6 +88,7 @@ RDEPEND="
 	ros-kinetic/ur_driver
 	ros-kinetic/usb_cam
 	ros-kinetic/velocity_controllers
+	test? ( ros-kinetic/cob_supported_robots )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

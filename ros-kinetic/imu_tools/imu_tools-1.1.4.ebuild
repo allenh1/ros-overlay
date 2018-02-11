@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,9 +8,10 @@ inherit ros-cmake
 
 DESCRIPTION="Various tools for IMU devices"
 HOMEPAGE="http://ros.org/wiki/imu_tools"
-SRC_URI="https://github.com/uos-gbp/imu_tools-release/archive/release/kinetic/imu_tools/1.1.4-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/uos-gbp/${PN}-release/archive/release/kinetic/${PN}/1.1.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
-LICENSE="( BSD CC-BY-SA-3.0 )"
+LICENSE="BSD"
+
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 RDEPEND="
 	ros-kinetic/imu_complementary_filter
@@ -24,4 +25,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

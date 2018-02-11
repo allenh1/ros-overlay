@@ -13,12 +13,15 @@ SRC_URI="https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/${
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/python_orocos_kdl
 	ros-kinetic/rospy
 	ros-kinetic/sensor_msgs
 	ros-kinetic/tf2
 	ros-kinetic/tf2_ros
+	test? ( ros-kinetic/geometry_msgs )
+	test? ( ros-kinetic/rostest )
 	dev-cpp/eigen
 "
 DEPEND="${RDEPEND}

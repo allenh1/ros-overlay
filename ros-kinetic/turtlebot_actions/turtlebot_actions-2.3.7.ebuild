@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="turtlebot_actions provides several basic actionlib actions for the TurtleBot"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/turtlebot-release/turtlebot_apps-release/archive/release/kinetic/turtlebot_actions/2.3.7-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="turtlebot_actions provides several basic actionlib actions for the TurtleBot."
+HOMEPAGE="http://ros.org/wiki/turtlebot_actions"
+SRC_URI="https://github.com/turtlebot-release/turtlebot_apps-release/archive/release/kinetic/${PN}/2.3.7-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -35,4 +35,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

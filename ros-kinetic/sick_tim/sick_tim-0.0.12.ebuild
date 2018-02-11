@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="A ROS driver for the SICK TiM and the SICK MRS 1000 laser scanners."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://wiki.ros.org/sick_tim"
 SRC_URI="https://github.com/uos-gbp/${PN}-release/archive/release/kinetic/${PN}/0.0.12-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

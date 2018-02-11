@@ -13,7 +13,9 @@ SRC_URI="https://github.com/ipa320/cob_environments-release/archive/release/kine
 LICENSE="Apache-2.0"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
+	test? ( ros-kinetic/roslaunch )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin

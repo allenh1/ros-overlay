@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="ProAut pointcloud filter package"
 HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/peterweissig/ros_pcdfilter-release/archive/release/kinetic/${PN}/1.2.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/tuc-proaut/ros_pcdfilter-release/archive/release/kinetic/${PN}/1.2.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 

@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,13 +6,14 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="Interaction management for human interactive agents in the concert"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/yujinrobot-release/rocon_tools-release/archive/release/kinetic/rocon_interactions/0.3.2-1.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="Interaction management for human interactive agents in the concert."
+HOMEPAGE="http://ros.org/wiki/rocon_interactions"
+SRC_URI="https://github.com/yujinrobot-release/rocon_tools-release/archive/release/kinetic/${PN}/0.3.2-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/genpy
 	ros-kinetic/rocon_app_manager_msgs
@@ -27,6 +28,7 @@ RDEPEND="
 	ros-kinetic/rospy
 	ros-kinetic/std_msgs
 	ros-kinetic/unique_id
+	test? ( ros-kinetic/rosunit )
 	dev-python/rospkg
 "
 DEPEND="${RDEPEND}
@@ -39,4 +41,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

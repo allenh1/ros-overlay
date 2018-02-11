@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="This package configures the move_base stack and makes use of the gmapping and am"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/RobotnikAutomation/rb1_base_sim-release/archive/release/kinetic/rb1_base_2dnav/1.0.2-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="This package configures the move_base stack and makes use of the gmapping a[...]"
+HOMEPAGE="http://ros.org/wiki/rb1_base_2dnav"
+SRC_URI="https://github.com/RobotnikAutomation/rb1_base_sim-release/archive/release/kinetic/${PN}/1.0.2-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -31,4 +31,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

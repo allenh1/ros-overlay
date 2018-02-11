@@ -13,6 +13,7 @@ SRC_URI="https://github.com/cra-ros-pkg/${PN}-release/archive/release/kinetic/${
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/cmake_modules
 	ros-kinetic/diagnostic_msgs
@@ -31,6 +32,9 @@ RDEPEND="
 	ros-kinetic/tf2_geometry_msgs
 	ros-kinetic/tf2_ros
 	ros-kinetic/xmlrpcpp
+	test? ( ros-kinetic/rosbag )
+	test? ( ros-kinetic/rostest )
+	test? ( ros-kinetic/rosunit )
 	dev-cpp/eigen
 	dev-cpp/yaml-cpp
 "

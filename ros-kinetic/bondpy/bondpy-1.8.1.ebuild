@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit ros-cmake
 
 DESCRIPTION="Python implementation of bond, a mechanism for checking when\
 	another p[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://www.ros.org/wiki/bondpy"
 SRC_URI="https://github.com/ros-gbp/bond_core-release/archive/release/kinetic/${PN}/1.8.1-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

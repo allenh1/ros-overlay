@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="Applications for NAO using the NAOqi API"
 HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/ros-naoqi/nao_robot-release/archive/release/kinetic/nao_apps/0.5.15-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-naoqi/nao_robot-release/archive/release/kinetic/${PN}/0.5.15-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/actionlib
 	ros-kinetic/diagnostic_msgs
@@ -27,6 +28,7 @@ RDEPEND="
 	ros-kinetic/rospy
 	ros-kinetic/std_msgs
 	ros-kinetic/std_srvs
+	test? ( ros-kinetic/trajectory_msgs )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
@@ -35,4 +37,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

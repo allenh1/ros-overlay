@@ -7,12 +7,13 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Utility functions for displaying and debugging data in Rviz via published m[...]"
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="https://github.com/davetcoleman/rviz_visual_tools"
 SRC_URI="https://github.com/davetcoleman/${PN}-release/archive/release/kinetic/${PN}/3.6.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/eigen_conversions
 	ros-kinetic/eigen_stl_containers
@@ -26,6 +27,8 @@ RDEPEND="
 	ros-kinetic/tf_conversions
 	ros-kinetic/trajectory_msgs
 	ros-kinetic/visualization_msgs
+	test? ( ros-kinetic/rostest )
+	test? ( ros-kinetic/rosunit )
 	dev-qt/qtx11extras:5
 "
 DEPEND="${RDEPEND}

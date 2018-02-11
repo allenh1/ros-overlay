@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,11 +8,12 @@ inherit ros-cmake
 
 DESCRIPTION="Point Grey camera driver based on libflycapture2."
 HOMEPAGE="http://ros.org/wiki/pointgrey_camera_driver"
-SRC_URI="https://github.com/ros-drivers-gbp/pointgrey_camera_driver-release/archive/release/kinetic/pointgrey_camera_driver/0.13.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/ros-drivers-gbp/${PN}-release/archive/release/kinetic/${PN}/0.13.4-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/camera_info_manager
 	ros-kinetic/diagnostic_updater
@@ -25,6 +26,8 @@ RDEPEND="
 	ros-kinetic/sensor_msgs
 	ros-kinetic/stereo_image_proc
 	ros-kinetic/wfov_camera_msgs
+	test? ( ros-kinetic/roslaunch )
+	test? ( ros-kinetic/roslint )
 	sys-libs/libraw1394
 	virtual/libusb:1
 "

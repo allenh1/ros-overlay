@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 inherit ros-cmake
 
 DESCRIPTION="Parser for Semantic Robot Description Format \(SRDF\)."
-HOMEPAGE="https://wiki.ros.org"
+HOMEPAGE="http://ros.org/wiki/srdfdom"
 SRC_URI="https://github.com/ros-gbp/${PN}-release/archive/release/kinetic/${PN}/0.4.2-1.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

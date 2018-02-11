@@ -6,8 +6,9 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="a#text"
-HOMEPAGE="https://wiki.ros.org"
+DESCRIPTION="Xpp is collection of packages for the visualization of motion plans for \
+ [...]"
+HOMEPAGE="http://github.com/leggedrobotics/xpp"
 SRC_URI="https://github.com/leggedrobotics/${PN}-release/archive/release/kinetic/${PN}/1.0.5-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"

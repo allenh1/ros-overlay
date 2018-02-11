@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -6,9 +6,10 @@ PYTHON_COMPAT=( python{2_7,3_5} )
 
 inherit ros-cmake
 
-DESCRIPTION="A metapackage of Emacs utils for ROS	Only there for simplifying the release"
-HOMEPAGE="https://wiki.ros.org"
-SRC_URI="https://github.com/code-iai-release/ros_emacs_utils-release/archive/release/kinetic/ros_emacs_utils/0.4.11-0.tar.gz -> ${PN}-release-${PV}.tar.gz"
+DESCRIPTION="A metapackage of Emacs utils for ROS.\
+	Only there for simplifying the r[...]"
+HOMEPAGE="http://github.com/code-iai/ros_emacs_utils"
+SRC_URI="https://github.com/code-iai-release/${PN}-release/archive/release/kinetic/${PN}/0.4.11-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
 LICENSE="BSD"
 
@@ -26,4 +27,3 @@ DEPEND="${RDEPEND}
 SLOT="0"
 ROS_DISTRO="kinetic"
 ROS_PREFIX="opt/ros/${ROS_DISTRO}"
-

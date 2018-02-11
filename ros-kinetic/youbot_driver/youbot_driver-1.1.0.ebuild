@@ -1,4 +1,4 @@
-# Copyright 2017 Open Source Robotics Foundation
+# Copyright 2018 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 EAPI=6
@@ -8,9 +8,10 @@ inherit ros-cmake
 
 DESCRIPTION="driver for the KUKA youBot robot"
 HOMEPAGE="http://github.com/youbot/youbot_driver"
-SRC_URI="https://github.com/youbot-release/youbot_driver-release/archive/release/kinetic/youbot_driver/1.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
+SRC_URI="https://github.com/youbot-release/${PN}-release/archive/release/kinetic/${PN}/1.1.0-0.tar.gz -> ${PN}-kinetic-release-${PV}.tar.gz"
 
-LICENSE="( LGPL-2 CC-BY-SA-3.0 )"
+LICENSE="LGPL-2"
+
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 RDEPEND="
 	ros-kinetic/rosconsole

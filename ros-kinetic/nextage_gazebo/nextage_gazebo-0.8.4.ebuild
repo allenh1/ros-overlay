@@ -13,6 +13,7 @@ SRC_URI="https://github.com/tork-a/rtmros_nextage-release/archive/release/kineti
 LICENSE="BSD"
 
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+IUSE="test"
 RDEPEND="
 	ros-kinetic/gazebo_plugins
 	ros-kinetic/gazebo_ros
@@ -20,6 +21,7 @@ RDEPEND="
 	ros-kinetic/nextage_description
 	ros-kinetic/nextage_moveit_config
 	ros-kinetic/ros_controllers
+	test? ( ros-kinetic/rostest )
 "
 DEPEND="${RDEPEND}
 	ros-kinetic/catkin
